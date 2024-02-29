@@ -1,0 +1,37 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    left: 42px;
+    top: 16px;
+  }
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    height: 55px;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: text;
+    transition: opacity 0.2s, visibility 0.2s;
+
+    &__control:focus {
+      border-color: var(--color-brand-normal);
+      outline: none;
+    }
+
+    &__control::placeholder {
+      color: var(--color-secondary-dark);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &__control:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+}
