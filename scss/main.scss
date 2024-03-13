@@ -13,8 +13,9 @@
 @import './components/links';
 /* header */
 @import './layouts/header';
+@import './layouts/mobile-menu';
 /* hero section */
-@import './layouts/hero-sectiom';
+@import './layouts/hero-section';
 /* advanteges section */
 @import './layouts/advanteges-section';
 /* traditions section */
@@ -25,6 +26,7 @@
 /* format section */
 @import './layouts/format-section';
 /* carousel */
+@import './components/pagination';
 @import './components/carousel-button';
 @import './components/formats-card';
 /* contakt section */
