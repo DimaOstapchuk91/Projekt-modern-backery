@@ -20,17 +20,23 @@
 
 .modal {
   position: relative;
-  max-width: 880px;
+  max-width: 360px;
   width: 100%;
-  max-height: 880px;
+  max-height: 640px;
   height: 100%;
-  padding: 48px;
+  padding: 24px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
   overflow-y: auto;
 
   @media screen and (min-width: $bp-tablet) {
-    padding: 128px;
+    max-width: 880px;
+    width: 100%;
+    max-height: 880px;
+    max-height: 880px;
+    height: 100%;
+    padding: 60px;
+    border-radius: 32px;
   }
 
   &__btn-close {

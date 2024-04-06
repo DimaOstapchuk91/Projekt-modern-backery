@@ -1,5 +1,8 @@
 .contact-section {
-  padding-bottom: 96px;
+  padding-bottom: 0;
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 96px;
+  }
 
   &__conteiner {
     display: flex;
@@ -17,7 +20,21 @@
   }
 
   &__title {
+    text-align: center;
     margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: start;
+    }
+  }
+
+  &__form-text {
+    color: var(--color-brand-dark);
+    font-size: 14px;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: start;
+      font-size: 18px;
+    }
   }
 
   &__button {
@@ -41,6 +58,13 @@
     @media screen and (min-width: $bp-desktop) {
       width: 600px;
       height: 595px;
+    }
+  }
+
+  &__form-politic {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
     }
   }
 }
